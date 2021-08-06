@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".CalendarActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="105dp"
+        android:textAlignment="center"
+        android:text="@string/choose_a_date"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/background_calendar"
+        android:layout_marginLeft="44dp">
+
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="340dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btncreate_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorTextSecondary"
+        android:text="@string/create_a_rapport"/>
+
+</LinearLayout>
